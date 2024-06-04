@@ -1,0 +1,52 @@
+<h2>Liste de personnages</h2>
+
+<!-- Affichage simple -->
+<div>
+  <h3>Affichage</h3>
+  <div>
+    <p>ID: {{ personnages[0].id }}</p>
+    <p>Nom: {{ personnages[0].name }}</p>
+  </div>
+  <div>
+    <p>ID: {{ personnages[1].id }}</p>
+    <p>Nom: {{ personnages[1].name }}</p>
+  </div>
+  <div>
+    <p>ID: {{ personnages[2].id }}</p>
+    <p>Nom: {{ personnages[2].name }}</p>
+  </div>
+</div>
+
+<!-- Utilisation d'un pipe pour changer le texte en majuscules -->
+<div>
+  <h3>Pipe</h3>
+  <div>
+    <p>ID: {{ personnages[0].id }}</p>
+    <p>Nom: {{ personnages[0].name | uppercase }}</p>
+  </div>
+  <div>
+    <p>ID: {{ personnages[1].id }}</p>
+    <p>Nom: {{ personnages[1].name | uppercase }}</p>
+  </div>
+  <div>
+    <p>ID: {{ personnages[2].id }}</p>
+    <p>Nom: {{ personnages[2].name | uppercase }}</p>
+  </div>
+</div>
+
+<!-- Utilisation du two-way binding -->
+<div>
+  <h3>Two Way Binding</h3>
+  <div>
+    <p>ID: {{ personnages[0].id }}</p>
+    <p>Nom: <input type="text" [(ngModel)]="personnages[0].name"></p>
+  </div>
+  <div>
+    <p>ID: {{ personnages[1].id }}</p>
+    <p>Nom: <input type="text" [(ngModel)]="personnages[1].name"></p>
+  </div>
+  <div>
+    <p>ID: {{ personnages[2].id }}</p>
+    <p>Nom: <input type="text" [(ngModel)]="personnages[2].name"></p>
+  </div>
+</div>

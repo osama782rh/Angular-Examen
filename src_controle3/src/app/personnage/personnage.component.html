@@ -1,0 +1,8 @@
+<div class="personnage" [ngClass]="{'gentil': personnage.type === 'gentil', 'mechant': personnage.type === 'méchant'}">
+  <p>{{ personnage.name.toUpperCase() }} Details</p>
+  <ul>
+    <li>id: {{ personnage.id }}</li>
+    <li>name: <input type="text" [(ngModel)]="personnage.name"></li>
+  </ul>
+  <button (click)="toggleType()">Changer Statut</button>
+</div>

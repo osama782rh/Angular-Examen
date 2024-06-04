@@ -1,0 +1,13 @@
+<div *ngIf="personnage">
+  <h2>{{ personnage.name.toUpperCase() }} Détails</h2>
+  <div>
+    <label>id: </label>{{ personnage.id }}
+  </div>
+  <div>
+    <label>name: </label>{{ personnage.name }}
+  </div>
+  <div>
+    <label>type: </label>{{ personnage.type }}
+  </div>
+  <button (click)="goBack()">Retour à la liste</button>
+</div>

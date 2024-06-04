@@ -1,0 +1,5 @@
+<h2>Liste de personnages</h2>
+
+<div *ngFor="let personnage of personnages$ | async">
+  <app-personnage [personnage]="personnage"></app-personnage>
+</div>
